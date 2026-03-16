@@ -172,9 +172,9 @@ def generate_statement_pdf(self, statement_data: dict, statement_id: str) -> dic
 
             for txn in transactions:
                 amount_str = (
-                    f"+{txn["amount"]}"
+                    f"+{txn['amount']}"
                     if txn["transaction_category"] == "credit"
-                    else f"-{txn["amount"]}"
+                    else f"-{txn['amount']}"
                 )
                 description = (
                     txn["description"][:30] + "..."
