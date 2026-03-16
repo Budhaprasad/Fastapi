@@ -292,7 +292,7 @@ class ModelTrainer:
                 await self.session.refresh(model_record)
 
                 logger.info(
-                    f"Successfully trained model {model_record.id} with AUC: {metrics["auc"]:.4f}"
+                    f"Successfully trained model {model_record.id} with AUC: {metrics['auc']:.4f}"
                 )
 
                 mlflow.end_run()
