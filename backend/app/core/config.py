@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(
         env_file="../../.envs/.env.production", env_ignore_empty=True, extra="ignore"
     )
-    API_V1_STR: str = ""
+    API_V1_STR = "/api/v1"
     PROJECT_NAME: str = ""
     PROJECT_DESCRIPTION: str = ""
     SITE_NAME: str = ""
